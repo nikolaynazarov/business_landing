@@ -1,0 +1,4 @@
+nav.nav
+  - var items = [{name: 'Home', url: '#home'}, {name: 'About Us', url: '#about'}, {name: 'Our Approch', url: '#approch'}, {name: 'Our Work', url: '#ourWork'}]
+    each item in items
+      a.nav__link(href=item.url)= item.name
