@@ -1,0 +1,57 @@
+.ourWork {
+  padding: 110px 0;
+  background-color: #de2b24;
+  color: #fff;
+
+  .title {
+    color: #fff;
+  }
+
+  .title--with-bottom-line {
+    &:after {
+      background-color: #fff;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  &__item {
+    width: 256px;
+    height: 255px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #f35e59;
+
+    &--name {
+      position: relative;
+      padding: 130px 40px 75px 40px;
+      text-align: center;
+
+      &:before {
+        @include sprite($work-item);
+        @include centerer-x();
+
+        content: '';
+        top: 74px;
+      }
+    }
+  }
+
+  &__name {
+    font-size: 1.625rem;
+  }
+
+  &___description {
+    font-size: 1rem;
+  }
+
+  &_picture {
+    width: 100%;
+    height: 100%;
+  }
+}
