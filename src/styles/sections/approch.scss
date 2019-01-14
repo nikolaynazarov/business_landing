@@ -33,6 +33,8 @@
     position: relative;
     max-width: 340px;
     max-height: 236px;
+    display: inline-block;
+    vertical-align: top;
   }
 
   &__picture {

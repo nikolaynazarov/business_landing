@@ -1,0 +1,152 @@
+@media (max-width: 991px) {
+  .header {
+    &__bottom {
+      flex-direction: column;
+    }
+  }
+
+  .contacts {
+    text-align: center;
+  }
+
+  .nav {
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+
+  .about {
+    &__item {
+      width: 100%;
+    }
+  }
+
+  .approch {
+
+    &__item {
+      align-items: center;
+
+      &:nth-child(2n) {
+        .approch__text {
+          padding: 40px;
+        }
+        .approch__step {
+          display: none;
+        }
+      }
+    }
+
+    &__step {
+      display: none;
+    }
+
+    &__text {
+      padding: 40px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+
+  .title {
+    margin-bottom: 40px;
+  }
+
+  .about,
+  .approch,
+  .ourWork,
+  .form-section,
+  .footer__top {
+    padding: 30px 0 30px;
+
+    .title__header {
+      font-size: 1.7rem;
+      padding-bottom: 10px;
+    }
+
+    .title__text {
+      font-size: .9rem;
+    }
+  }
+
+  .contact {
+    padding: 10px;
+
+    &:first-child {
+      margin-right: 0;
+      padding-right: 5px;
+    }
+  }
+
+  .header__bottom {
+    padding: 30px 0 30px;
+  }
+
+  .nav {
+    font-size: .8rem;
+
+    &__link {
+      padding: 15px 5px;
+
+      &:after {
+        margin-left: 7px;
+      }
+    }
+  }
+
+  .hero {
+    padding: 100px 20px;
+    min-height: inherit;
+
+    &__about {
+      font-size: 2.5rem;
+    }
+
+    &__title {
+      font-size: 1.5rem;
+    }
+
+    .button--text-uppercase {
+      padding: 21px 41px;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+  }
+
+  .approch {
+    &__item {
+      flex-direction: column;
+      align-items: center;
+      
+      &:nth-child(2n) {
+        flex-direction: column;
+        align-items: center;
+
+        .approch__text {
+          padding: 20px;
+        }
+      }
+    }
+
+    &__text {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+    }
+
+    &__image {
+      padding-top: 10px;
+      max-width: calc(340px / 1.1);
+      max-height: calc(236px / 1.1);
+    }
+  }
+
+  .form {
+    width: 90%;
+    padding: 20px 10px;
+
+    &__input {
+      width: 90%;
+    }
+  }
+}
