@@ -15,6 +15,7 @@
     height: 60px;
     border: 2px solid #ffffff;
     border-radius: 50%;
+    cursor: pointer;
   }
 
   .arrow-down {
@@ -95,6 +96,7 @@
     background-color: #de2b24;
     border-radius: 50%;
     transition: 0.3s;
+    outline: none;
 
     &:hover {
       background-color: lighten(#de2b24, 7%);

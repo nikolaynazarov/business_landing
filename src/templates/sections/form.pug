@@ -6,7 +6,7 @@ section.form-section
     
     .btn-down: a.arrow-down: i.fas.fa-angle-down
 
-    .form-container
+    .form-container.is-hidden
       form(method="POST" action="#").form
         button(type="button").form__close-button x
         .form__text.
@@ -14,8 +14,8 @@ section.form-section
           business + Learn How To Use Google and Facebook to get 5000% ROI or more
         
         .form__fields
-          input.form__input(type="text" placeholder="Your Name")
-          input.form__input(type="text" placeholder="Contact Number")
-          input.form__input(type="text" placeholder="Company Name")
+          input.form__input(type="text" placeholder="Your Name" required)
+          input.form__input(type="number" placeholder="Contact Number" required)
+          input.form__input(type="text" placeholder="Company Name" required)
         
         button(type="submit").button.button--red.button--text-uppercase Submit now

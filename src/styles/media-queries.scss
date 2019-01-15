@@ -21,7 +21,6 @@
   }
 
   .approch {
-
     &__item {
       align-items: center;
 
@@ -46,7 +45,6 @@
 }
 
 @media (max-width: 600px) {
-
   .title {
     margin-bottom: 40px;
   }
@@ -138,6 +136,17 @@
       padding-top: 10px;
       max-width: calc(340px / 1.1);
       max-height: calc(236px / 1.1);
+    }
+  }
+
+  .ourWork {
+    &__list {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__container {
+      flex-direction: column;
     }
   }
 
